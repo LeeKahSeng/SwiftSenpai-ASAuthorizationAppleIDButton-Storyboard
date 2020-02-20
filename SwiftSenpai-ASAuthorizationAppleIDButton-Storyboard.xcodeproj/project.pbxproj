@@ -13,6 +13,7 @@
 		F95B9F4123FE74B100923867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95B9F3F23FE74B100923867 /* Main.storyboard */; };
 		F95B9F4323FE74B400923867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95B9F4223FE74B400923867 /* Assets.xcassets */; };
 		F95B9F4623FE74B400923867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95B9F4423FE74B400923867 /* LaunchScreen.storyboard */; };
+		F95B9F4E23FE764600923867 /* MyAuthorizationAppleIDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95B9F4D23FE764600923867 /* MyAuthorizationAppleIDButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F95B9F4223FE74B400923867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F95B9F4523FE74B400923867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F95B9F4723FE74B400923867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F95B9F4D23FE764600923867 /* MyAuthorizationAppleIDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAuthorizationAppleIDButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				F95B9F3923FE74B100923867 /* AppDelegate.swift */,
 				F95B9F3B23FE74B100923867 /* SceneDelegate.swift */,
 				F95B9F3D23FE74B100923867 /* ViewController.swift */,
+				F95B9F4D23FE764600923867 /* MyAuthorizationAppleIDButton.swift */,
 				F95B9F3F23FE74B100923867 /* Main.storyboard */,
 				F95B9F4223FE74B400923867 /* Assets.xcassets */,
 				F95B9F4423FE74B400923867 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				F95B9F3E23FE74B100923867 /* ViewController.swift in Sources */,
 				F95B9F3A23FE74B100923867 /* AppDelegate.swift in Sources */,
 				F95B9F3C23FE74B100923867 /* SceneDelegate.swift in Sources */,
+				F95B9F4E23FE764600923867 /* MyAuthorizationAppleIDButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
