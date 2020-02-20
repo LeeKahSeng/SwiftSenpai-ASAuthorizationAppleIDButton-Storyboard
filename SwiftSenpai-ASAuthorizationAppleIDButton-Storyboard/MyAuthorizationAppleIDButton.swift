@@ -17,6 +17,9 @@ class MyAuthorizationAppleIDButton: UIButton {
     @IBInspectable
     var cornerRadius: CGFloat = 6.0
     
+    @IBInspectable
+    var authButtonType: Int = ASAuthorizationAppleIDButton.ButtonType.default.rawValue
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -29,7 +32,8 @@ class MyAuthorizationAppleIDButton: UIButton {
         super.draw(rect)
 
         // Create ASAuthorizationAppleIDButton
-        authorizationButton = ASAuthorizationAppleIDButton(authorizationButtonType: .default, authorizationButtonStyle: .black)
+        let type = ASAuthorizationAppleIDButton.ButtonType.init(rawValue: authButtonType) ?? .default
+        authorizationButton = ASAuthorizationAppleIDButton(authorizationButtonType: type, authorizationButtonStyle: .black)
         authorizationButton.cornerRadius = cornerRadius
 
         // Disable user interaction so that it won't hijack the tap gesture towards MyAuthorizationAppleIDButton
