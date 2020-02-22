@@ -37,7 +37,8 @@ class MyAuthorizationAppleIDButton: UIButton {
         // Create ASAuthorizationAppleIDButton
         let type = ASAuthorizationAppleIDButton.ButtonType.init(rawValue: authButtonType) ?? .default
         let style = ASAuthorizationAppleIDButton.Style.init(rawValue: authButtonStyle) ?? .black
-        authorizationButton = ASAuthorizationAppleIDButton(authorizationButtonType: type, authorizationButtonStyle: style)
+        authorizationButton = ASAuthorizationAppleIDButton(authorizationButtonType: type,
+                                                           authorizationButtonStyle: style)
         authorizationButton.cornerRadius = cornerRadius
 
         // Set selector for touch up inside event so that can forward the event to MyAuthorizationAppleIDButton
@@ -57,7 +58,7 @@ class MyAuthorizationAppleIDButton: UIButton {
     }
     
     @objc func authorizationAppleIDButtonTapped(_ sender: Any) {
-        // Forward the touch up inside event to ASAuthorizationAppleIDButton
+        // Forward the touch up inside event to MyAuthorizationAppleIDButton
         sendActions(for: .touchUpInside)
     }
 
