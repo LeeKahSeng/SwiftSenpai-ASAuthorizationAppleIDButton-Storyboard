@@ -16,7 +16,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: Any) {
-        print("Button Tapped: Sign in With Apple")
+        let alert = UIAlertController(title: "Button Tapped", message: "Sign In with Apple", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
     }
     
     
